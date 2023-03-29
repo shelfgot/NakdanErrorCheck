@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <style>
+            body {
+                direction: rtl;
+            }
+            .wrapper {
+                margin: 0 auto;
+                background-color: rgba(200,30,30,0.5);
+                padding: 1em;
+                border-radius: 1em;
+                display:block;
+            }
+            .suggested_form {
+                float: right;
+            }
+            .best_form {
+                float: right;
+                font-size: 2em;
+            }
+            .replace_all {
+                float: right;
+            }
+            /* container */
+            .wrapper > * {
+                padding:0.3rem;
+            }
+
+            @media (min-width:768px) {
+                .wrapper {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="suggested_form">
+            צורה משוערת
+            <br />
+            <span class="best_form">
+            אַשֶר
+            </span>
+            <br />
+            <button class="replace_all">replace all</button>
+            </div>
+            <span class="wonky">
+            ...כי כאָשֶר יקום איש על רעהו ורצחו נפש כן הדבר הזה...
+            
+        </span>
+        </div>
+    </body>
+</html>

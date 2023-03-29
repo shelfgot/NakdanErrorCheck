@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+{% with suggestion_class = get_suggestions(f) %}   
+    {% for suggestion in suggestion_class['suggestions'] %}
+        <div class="suggestion">
+
+        </div>
+    {% endfor %}
+<script>
+    window.onbeforeunload = () => fetch('/stop');
+</script>
+</html>
